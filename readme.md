@@ -8,7 +8,5 @@
 </article>
 
 ![Main Page](https://i.imgur.com/mXP7pg9.png)
-
-![Navigating](https://media.giphy.com/media/55gNRQDqTPT1qg0ohf/giphy.gif)
-
+<img src="https://media.giphy.com/media/55gNRQDqTPT1qg0ohf/giphy.gif" />
 ![Issues Page](https://i.imgur.com/2GsMnLt.png)
