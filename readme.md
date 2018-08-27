@@ -8,6 +8,6 @@
 
 ![Main Page](https://i.imgur.com/mXP7pg9.png)
 
-![Navigating](https://i.imgur.com/ycsJZmz.gif)
+![Navigating](https://i.imgur.com/ycsJZmz.gifv)
 
 ![Issues Page](https://i.imgur.com/2GsMnLt.png)
