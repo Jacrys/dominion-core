@@ -6,3 +6,8 @@
 <p>Click Github, then Issues and enter the user and repo you want to see and it will show you all of the issues for that repository. I have included some hidden pieces here and there, see if you can find them.</p>
 </article>
 
+![Main Page](https://imgur.com/mXP7pg9)
+
+![Navigating](https://imgur.com/ycsJZmz)
+
+![Issues Page](https://imgur.com/2GsMnLt)
