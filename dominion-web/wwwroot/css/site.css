@@ -1,0 +1,90 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.status {
+    color: white;
+    /*font-size: 12px !important;
+    padding: 7px 10px;
+    position: absolute;
+    border-radius: 15px;
+    transform: translate(-35px,6px);*/
+}
+
+.open {
+    background-color: green;
+}
+
+.closed {
+    background-color: red;
+}
+
+.badge:empty {
+    display:initial;
+}
+
+a.nolink {
+    color:inherit;
+    text-decoration:none;
+    background: inherit;
+}
+
+.issueBody {
+    margin-left: 2.57em;
+}
+
+.mybadge {
+    flex-grow:initial;
+    height: 20px;
+    margin-top:25px;
+}
+
+.row {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.issueContainer:hover {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(204,204,204,1);
+    box-shadow: 10px 10px 5px 0px rgba(204,204,204,1);
+    border: 1px solid black;
+}
+
+.issueContainer {
+    padding-bottom: 5px;
+}

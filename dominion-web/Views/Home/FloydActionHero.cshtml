@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "FloydActionHero";
+}
+
+@Model Repository
+
+<p>@Model.Name</p>
+@{ foreach(var file in Model.Files)
+    {
+        <h2>@file</h2>
+    }
+ }

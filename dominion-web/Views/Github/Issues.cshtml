@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Repo Issue List";
+}
+
+@model IssueList
+
+<h1>Issues list for @(Model.owner) / @(Model.repoName)</h1>
+
+<div class="row">
+        @{
+            foreach (var issue in Model.issues)
+            {
+                <div class="col-md-12 issueContainer">
+                    <a href="#issue@(@issue.Number)Body" class="nolink col-md-8" data-toggle="collapse">
+                        <h3>
+                            <i class="badge status @issue.State fa @(@issue.PullRequest == null ? @issue.State == "open" ? "fa-unlock-alt" : "fa-lock" : "fa-code-fork")" data-toggle="tooltip" data-placement="left" title="@(@issue.State == "open" ? "Open issue" : "Closed issue")" data-trigger="hover"></i> @issue.Title
+                        </h3>
+                    </a>
+                        @{
+                            if (@issue.State == "open")
+                            {
+                                <span class="badge grey mybadge col-md-4">Issue opened at @issue.CreatedAt by <a class="nolink" href=@issue.User.HtmlUrl>@(issue.User.Name == null ? @issue.User.Login : @issue.User.Name)</a></span>
+                            }
+                            else
+                            {
+                                <span class="badge grey mybadge col-md-4">Issue closed at @issue.ClosedAt by @issue.ClosedBy</span>
+                            }
+                        }
+                    <div id="issue@(@issue.Number)Body" class="collapse issueBody col-md-12">
+                        <div>@issue.Body</div>
+                        <a href=@issue.HtmlUrl class="badge grey"><i class="fa fa-comments"></i> @issue.Comments</a>
+                    </div>
+                </div>   
+            }
+        }
+</div>
